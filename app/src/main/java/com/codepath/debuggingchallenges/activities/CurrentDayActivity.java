@@ -17,7 +17,8 @@ public class CurrentDayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_current_day);
         tvDay = (TextView) findViewById(R.id.tvDay);
-        tvDay.setText(getDayOfMonth());
+        // Was passing int value to setText and it was searching resource files for int value
+        tvDay.setText(Integer.toString(getDayOfMonth()));
     }
 
     private int getDayOfMonth() {

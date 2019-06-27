@@ -3,6 +3,7 @@ package com.codepath.debuggingchallenges.activities;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+// Set the xml declaration to match this import
 import android.widget.Toolbar;
 
 import com.codepath.debuggingchallenges.R;

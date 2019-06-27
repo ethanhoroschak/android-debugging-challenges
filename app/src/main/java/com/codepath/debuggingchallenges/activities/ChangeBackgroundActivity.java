@@ -18,8 +18,11 @@ public class ChangeBackgroundActivity extends AppCompatActivity {
     }
 
     public void onGoClick(View view) {
-        View mainView = findViewById(android.R.id.content);
+        // Deleted android in front of R
+        // Fixed incorrect function call for button, added id to view, made view unclickable and put it behind the button
+        View mainView = findViewById(R.id.content);
         mainView.setBackgroundColor(getNextColor());
+       // Toast.makeText(ChangeBackgroundActivity.this, "clicked", Toast.LENGTH_LONG).show();
     }
 
     private int getNextColor() {
